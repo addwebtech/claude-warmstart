@@ -1,0 +1,9 @@
+{
+  "name": "warmstart",
+  "displayName": "Warmstart",
+  "version": "0.1.0",
+  "description": "Start new Claude Code conversations warm: auto-saved handoff, guards against expensive cold-cache reloads and model switches, and a savings report measured from your own logs.",
+  "author": { "name": "addwebtech" },
+  "license": "MIT",
+  "keywords": ["handoff", "prompt-cache", "tokens", "cost", "context"]
+}

@@ -1,0 +1,12 @@
+{
+  "name": "warmstart",
+  "description": "Warmstart: handoff + prompt-cache cost guards for Claude Code",
+  "owner": { "name": "addwebtech" },
+  "plugins": [
+    {
+      "name": "warmstart",
+      "source": "./plugins/warmstart",
+      "description": "Start new Claude Code conversations warm and stop paying to reload old ones."
+    }
+  ]
+}

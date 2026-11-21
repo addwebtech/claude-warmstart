@@ -1,0 +1,7 @@
+__pycache__/
+*.pyc
+.claude/handoff/
+.claude/settings.local.json
+.claude/warmstart/
+.claude/skills/warmstart-*/
+*.bak-warmstart-*
