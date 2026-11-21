@@ -7,6 +7,12 @@ jobs:
       matrix:
         os: [ubuntu-latest, macos-latest, windows-latest]
         python: ["3.8", "3.12"]
+        exclude:
+          - os: ubuntu-latest     # la imagen de Ubuntu de GitHub ya no trae Python 3.8; se prueba en macOS y Windows
+            python: "3.8"
+        include:
+          - os: ubuntu-latest
+            python: "3.10"
     runs-on: ${{ matrix.os }}
     steps:
       - uses: actions/checkout@v4

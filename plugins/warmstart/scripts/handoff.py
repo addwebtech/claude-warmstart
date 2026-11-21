@@ -91,7 +91,8 @@ def log_error(e):
 def write_text(path, text):
     path = Path(path)
     path.parent.mkdir(parents=True, exist_ok=True)
-    path.write_text(text, encoding="utf-8", newline="\n")
+    with open(path, "w", encoding="utf-8", newline="\n") as fh:     # Path.write_text(newline=) no existe antes de Python 3.10
+        fh.write(text)
     if os.name != "nt":
         try:
             os.chmod(str(path), 0o600)       # lo guardado es tuyo: solo tu usuario lo lee
