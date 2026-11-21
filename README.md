@@ -73,7 +73,7 @@ Secrets: known key formats (API keys, tokens, JWTs, private-key headers, `user:p
 
 ## Status
 
-Pre-release. Tested on Windows: 33 automated tests plus real sessions up to 81 MB, and an end-to-end test against real Claude Code 2.1.312 (19 checks, all passing). macOS/Linux and Python 3.8 are covered by CI but have not been run by the author yet. Not yet verified on older Claude Code (e.g. 2.1.58) or live in the interactive UI. Messages shown to you are in English or Spanish (automatic). The internal reports the model reads (`preparar`, `verificar`, `ahorro`) are still Spanish only; the skills are in English.
+Pre-release. Tested on Windows: 33 automated tests plus real sessions up to 81 MB, and an end-to-end test against real Claude Code 2.1.312 (19 checks, all passing). The automated tests also pass in CI on macOS, Linux and Windows (Python 3.8, 3.10 and 3.12); the end-to-end test has only been run on Windows. Not yet verified on older Claude Code (e.g. 2.1.58) or live in the interactive UI. Messages shown to you are in English or Spanish (automatic). The internal reports the model reads (`preparar`, `verificar`, `ahorro`) are still Spanish only; the skills are in English.
 
 Starting a new conversation needs no command: the handoff is already in context. Verified: a specific question about the previous session is answered correctly. **Not guaranteed:** a vague greeting like "hi" resuming on its own. In the author's 3 test runs it did so once; the other times Claude went looking for a state file instead, probably because the author's own global `CLAUDE.md` asks for that (not proven). Ask for what you want instead.
 
